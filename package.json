@@ -1,0 +1,16 @@
+{
+  "name": "@local/dsh-link-guard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./scan": "./lib/scan.js"
+  },
+  "description": "Cross-session guard: inject the forward-slash link rule into every request and steer a correction when an assistant message ships a backslash Markdown link.",
+  "keywords": ["dsh", "dsh-plugin", "markdown", "links", "guard"],
+  "scripts": {
+    "test": "node test/link-guard-test.mjs"
+  }
+}
